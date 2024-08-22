@@ -1,0 +1,343 @@
+body{
+    background-color: #F8EDE3;
+    margin: 0;                          /* Sayfa kenarliklarini komple sifirlamis oluruz */
+    padding: 0;                         /* Sayfa kenarliklarini komple sifirlamis oluruz */
+}
+
+body, h1, h2, h3, h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+
+
+/* ----------------- En Ust Kisim -------------------*/
+header {
+    color: #fff;
+    background-color: #f5f3f1;
+    font-size: 24px;
+    top: 0;
+    z-index: 110;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    transform: scale(1.0, 1.0);
+    
+}
+
+
+.header-inner {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 0;
+    display: block;
+    
+}
+
+.site-name {
+    width: 80%;
+}
+
+header div {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.site-name a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.i-amphtml-fill-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.i-amphtml-replaced-content {
+    padding: 0 !important;
+    border: none !important;
+}
+
+
+.headerbar .menu {
+    fill: #d10000;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.headerbar .search {
+    float: left;
+    fill: #d10000;
+}
+/*-------------------------------------------------------- */
+
+
+/* ------------- Govde Kisim -------------- */
+.main-wrapper {
+    max-width: 1000px;
+    margin-left: 450px;
+    margin-top: 90px;
+}
+
+.main {
+    float: left;
+    /*width: 70%;*/
+}
+
+.breadcrumbs {
+    color: gray;
+    font-size: 16px;
+    font-weight: 300;
+   
+}
+
+a {
+    color: #42b312;
+    text-decoration: none;
+    font-weight: bold
+}
+
+
+.recipe-meta {
+    background-color: #e8f6e2;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.attribute {
+    padding: 8px;
+    color: #5e5e5e;
+    display: inline-flex;
+    font-size: 12px;
+}
+
+
+.main-section {
+    margin: 10px 0 10px 0;
+}
+
+.amp-wp-7d27179:not(#_#_#_#_#_) {
+    text-align: justify;
+}
+/*------------------------------------------------------- */
+
+/*Profiterol Hazirlanis Maddeler Halinde Kismi */
+.ingredients {
+    background-color: #e8f6e2;
+    display: block;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 5px 5px 5px 0;
+}
+
+
+.ingredients > ul > li {
+    margin-bottom: 10px;
+}
+
+.olculer{
+    text-align: right;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.olculer a {
+    color: white;
+    background-color: #42b312;
+    padding: 5px;
+}
+
+
+.instructions {
+    background-color: #e8f6e2;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d2d2d2;
+}
+
+.instructions > ol > li {
+    position: relative;
+    line-height: 1.8;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.app-button {
+    text-align: right;
+    width: 100%;
+    font-size: 12px;
+    color: #ef2a2a;
+}
+
+
+.app-button a {
+    color: white;
+    background-color: #d10000;
+    padding: 5px;
+}
+/* ------------------------------------------------------ */
+
+
+/*Yorum Gonder Kismini Duzenleme Kismi */
+
+.comment-form {
+    background-color: #e8f6e2;
+    display: block;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    margin-top: 20px;
+}
+
+
+.comment-field {
+    padding: 0;
+    margin: 0;
+}
+
+.comment-field label {
+    display: block;
+    margin: 15px 0 5px 0;
+}
+/* ---------------------------------------------------------------------------- */
+
+/*Gorsel Yukleme Kismini Duzenleme ve O Kisimin Arka Planini Beyaz Yapma */
+.file-upload-wrapper {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.file-upload-wrapper input[type="file"] {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.file-upload-label {
+    display: block;
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------- */
+
+/*Isim ve E-posta Giris Alanlarini Duzenleme Kismi */
+.commentform input, textarea {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0;
+    text-indent: 10px;
+    padding: 10px 0 10px 0;
+    background-color: #fff;
+}
+
+.comment-field input[type="text"],
+.comment-field input[type="email"],
+.comment-field textarea {
+    width: 100%; /* Genişliği %100 yaparak kapsayıcıya uyacak şekilde ayarlar */
+    padding: 10px; /* İçerik boşluğu */
+    border-radius: 5px; /* Köşe yuvarlama */
+    border: 1px solid #ccc; /* Hafif gri bir kenarlık */
+    box-sizing: border-box; /* Padding ve border ile birlikte genişlik hesaplama */
+    font-size: 16px; /* Yazı tipi boyutu */
+}
+
+.comment-field textarea {
+        height: 150px; /* Yüksekliği artırmak için */
+    }
+
+/* -------------------------------------------------------------------------------- */
+
+
+.pagination {                       
+    display: block;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: #42b312;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.enAltKisim {                       
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 0 8px 0 8px;
+    background-color: #0c9d0a;
+    border-radius: 5px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #128b10;
+    clear: both;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0
+}
+
+
+.footer-item {
+    display: inline-block;
+    padding: 0 8px 0 8px;
+    background-color: #0c9d0a;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.footer-item a {
+    color: #FFF;
+}
+
+.footer p {
+    color: white;
+    font-size: 12px;
+}

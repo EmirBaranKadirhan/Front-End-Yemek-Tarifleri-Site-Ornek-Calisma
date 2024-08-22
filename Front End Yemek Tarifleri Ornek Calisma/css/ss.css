@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.left-bar{
+    width: 200px;
+    float: left;
+}
+
+
+.content{
+    width: 800px;
+    float: left;
+}
+
+.content2{
+    width: 250px;
+    float: left;
+    margin-right: 16px;
+}
+
+
+.bg-color-red{
+    background-color: red;
+}
+
+.bg-color-green{
+    background-color: green;
+}
+
+.bg-color-aqua{
+    background-color: aqua;
+}
